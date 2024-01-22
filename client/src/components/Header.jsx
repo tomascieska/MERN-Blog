@@ -6,7 +6,6 @@ import { FaMoon } from "react-icons/fa"
 const Header = () => {
   const path = useLocation().pathname
   return (
-    <>
     <Navbar className="border-b-2">
         <Link to={'/'} className="self-center whitespace-nowrap 
             text-sm sm:text-xl font-semibold dark:text-white">
@@ -30,7 +29,7 @@ const Header = () => {
             <FaMoon />
           </Button>
           <Link to={'/sign-in'}>
-            <Button gradientDuoTone="purpleToBlue">
+            <Button gradientDuoTone="purpleToBlue" outline>
               Sign In
             </Button>
           </Link>
@@ -54,8 +53,6 @@ const Header = () => {
             </Navbar.Link>
           </Navbar.Collapse>
     </Navbar>
-    
-    </>
   )
 }
 
