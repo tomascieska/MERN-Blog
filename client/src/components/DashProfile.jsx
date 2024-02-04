@@ -1,4 +1,4 @@
-import { Alert, Button, Modal, ModalBody, TextInput } from 'flowbite-react'
+import { Alert, Button, Modal, TextInput } from 'flowbite-react'
 import { useRef, useState, useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { getDownloadURL, getStorage, ref, uploadBytesResumable} from 'firebase/storage'
@@ -269,7 +269,6 @@ const DashProfile = () => {
                             </div>
                     </div>
                 </Modal.Body>
-
         </Modal>
     </div>
   )
